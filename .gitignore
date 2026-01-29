@@ -1,0 +1,15 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+.terraform.lock.hcl
+
+# Sensíveis (do seu diretório)
+*.pem
+*.csv
+**/.terraform/*
+*.tfstate*
+*.pem
+*.csv
