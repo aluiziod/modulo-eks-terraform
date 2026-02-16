@@ -12,13 +12,19 @@ module "eks" {
   enable_cluster_creator_admin_permissions = true
 
   addons = {
-    coredns = {}
-    eks-pod-identity-agent = {
-      before-compute = true
+    coredns = {
+      most_recent    = true
     }
-    kube-proxy = {}
+    eks-pod-identity-agent = {
+      before_compute = true
+      most_recent    = true
+    }
+    kube-proxy = {
+      most_recent    = true
+    }
     vpc-cni = {
-      before-compute = true
+      before_compute = true
+      most_recent    = true
     }
   }
 
